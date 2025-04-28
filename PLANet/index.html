@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLANet - Study Planner</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Comic+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gradient-to-b from-indigo-900 via-purple-900 to-black text-white font-sans min-h-screen flex flex-col">
+  <header class="p-4 flex justify-between items-center bg-gradient-to-r from-purple-700 to-indigo-700 shadow-lg">
+    <h1 class="text-3xl font-orbitron tracking-widest">PLANet</h1>
+    <nav>
+      <ul class="flex space-x-6 text-lg font-comic-neue">
+        <li><button id="tasks-tab" class="hover:text-yellow-400 focus:outline-none">Tasks</button></li>
+        <li><button id="progress-tab" class="hover:text-yellow-400 focus:outline-none">Progress</button></li>
+        <li><button id="pomodoro-tab" class="hover:text-yellow-400 focus:outline-none">Pomodoro</button></li>
+        <li><button id="calendar-tab" class="hover:text-yellow-400 focus:outline-none">Calendar</button></li>
+        <li><button id="subjects-tab" class="hover:text-yellow-400 focus:outline-none">Subjects</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app-content" class="flex-grow p-6 overflow-auto">
+    <!-- Content will be dynamically injected here -->
+  </main>
+
+  <footer class="p-4 text-center text-sm text-gray-400 font-comic-neue">
+    &copy; 2024 PLANet Study Planner - A space-themed productivity app
+  </footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
